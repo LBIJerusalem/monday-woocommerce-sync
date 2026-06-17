@@ -1,29 +1,25 @@
-import requests
-
-# =====================================================
-# CONFIGURATION
-# =====================================================
 import os
 import requests
 from datetime import datetime
 
 print(f"Sync started at {datetime.now()}")
 
+# =====================================================
+# CONFIGURATION
+# =====================================================
+
 # ---------- Monday ----------
 MONDAY_API_KEY = os.environ["MONDAY_API_KEY"]
 BOARD_ID = int(os.environ["MONDAY_BOARD_ID"])
+MONDAY_URL = os.environ["MONDAY_URL"]
 
-COLUMN_WC_ID = "text_mm4d2hcf"
-COLUMN_WC_STOCK = "numeric_mm4dxf34"
+COLUMN_WC_ID = os.environ["COLUMN_WC_ID"]
+COLUMN_WC_STOCK = os.environ["COLUMN_WC_STOCK"]
 
 # ---------- WooCommerce ----------
-# Change this if your API endpoint is different.
-WC_API_URL = os.environ["SITE_URL"]
-
+WC_API_URL = os.environ["WC_API_URL"]
 WC_CONSUMER_KEY = os.environ["WC_CONSUMER_KEY"]
 WC_CONSUMER_SECRET = os.environ["WC_CONSUMER_SECRET"]
-
-MONDAY_URL = "https://api.monday.com/v2"
 
 HEADERS = {
     "Authorization": MONDAY_API_KEY,
@@ -62,7 +58,6 @@ response = requests.post(
 response.raise_for_status()
 
 result = response.json()
-
 items = result["data"]["boards"][0]["items_page"]["items"]
 
 print(f"Found {len(items)} item(s) on the board.")
