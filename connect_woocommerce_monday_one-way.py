@@ -5,7 +5,7 @@ import requests
 # =====================================================
 
 # ---------- Monday ----------
-MONDAY_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjUwNjAxMjczOSwiYWFpIjoxMSwidWlkIjo0MDUyODE5MSwiaWFkIjoiMjAyNS0wNC0yOVQxMTo1NzowNy4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTU3MzYzODksInJnbiI6ImV1YzEifQ.F3z0qyToAiKMuyhIUGanWk0gSLt3agxM876oYcdTWzg"
+MONDAY_API_KEY = os.environ["MONDAY_API_KEY"]
 BOARD_ID = 5098735316
 
 COLUMN_WC_ID = "text_mm4d2hcf"
@@ -15,8 +15,8 @@ COLUMN_WC_STOCK = "numeric_mm4dxf34"
 # Change this if your API endpoint is different.
 WC_API_URL = "https://leobaeck.org/wp-json/wc/v3"
 
-WC_CONSUMER_KEY = "ck_a1ecc6646ac3d593a2be660191673044aea66671"
-WC_CONSUMER_SECRET = "cs_8a0090fcd59e0ea6b06e1f82715eae0dc01e40fb"
+WC_CONSUMER_KEY = os.environ["WC_CONSUMER_KEY"]
+WC_CONSUMER_SECRET = os.environ["WC_CONSUMER_SECRET"]
 
 MONDAY_URL = "https://api.monday.com/v2"
 
