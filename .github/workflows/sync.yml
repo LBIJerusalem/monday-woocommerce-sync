@@ -1,9 +1,9 @@
 name: Sync WooCommerce to Monday
 
 on:
-  workflow_dispatch:
-schedule:
-  - cron: "7,22,37,52 * * * *"
+  workflow_dispatch: {}
+  schedule:
+    - cron: '7,22,37,52 * * * *'
 
 jobs:
   sync:
