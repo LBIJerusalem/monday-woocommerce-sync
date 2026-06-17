@@ -3,6 +3,8 @@ import requests
 # =====================================================
 # CONFIGURATION
 # =====================================================
+import os
+import requests
 
 # ---------- Monday ----------
 MONDAY_API_KEY = os.environ["MONDAY_API_KEY"]
