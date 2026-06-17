@@ -17,7 +17,7 @@ COLUMN_WC_ID = "text_mm4d2hcf"
 COLUMN_WC_STOCK = "numeric_mm4dxf34"
 
 # ---------- WooCommerce ----------
-WC_API_URL = os.environ["WC_API_URL"]
+WC_API_URL = "https://leobaeck.org/wp-json/wc/v3"
 WC_CONSUMER_KEY = os.environ["WC_CONSUMER_KEY"]
 WC_CONSUMER_SECRET = os.environ["WC_CONSUMER_SECRET"]
 
