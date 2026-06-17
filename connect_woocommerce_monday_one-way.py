@@ -18,7 +18,7 @@ COLUMN_WC_STOCK = "numeric_mm4dxf34"
 
 # ---------- WooCommerce ----------
 # Change this if your API endpoint is different.
-WC_API_URL = "https://leobaeck.org/wp-json/wc/v3"
+WC_API_URL = os.environ["SITE_URL"]
 
 WC_CONSUMER_KEY = os.environ["WC_CONSUMER_KEY"]
 WC_CONSUMER_SECRET = os.environ["WC_CONSUMER_SECRET"]
