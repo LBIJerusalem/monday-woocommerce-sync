@@ -11,7 +11,7 @@ print(f"Sync started at {datetime.now()}")
 # ---------- Monday ----------
 MONDAY_API_KEY = os.environ["MONDAY_API_KEY"]
 BOARD_ID = 5098735316
-MONDAY_URL = os.environ["MONDAY_URL"]
+MONDAY_URL = "https://api.monday.com/v2"
 
 COLUMN_WC_ID = os.environ["COLUMN_WC_ID"]
 COLUMN_WC_STOCK = os.environ["COLUMN_WC_STOCK"]
