@@ -5,6 +5,9 @@ import requests
 # =====================================================
 import os
 import requests
+from datetime import datetime
+
+print(f"Sync started at {datetime.now()}")
 
 # ---------- Monday ----------
 MONDAY_API_KEY = os.environ["MONDAY_API_KEY"]
